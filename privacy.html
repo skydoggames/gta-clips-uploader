@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · GTA Clips Uploader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./">GTA Clips <span>Uploader</span></a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective November 20, 2026</p>
+
+  <p>GTA Clips Uploader ("the tool") is a personal tool run by the owner of the YouTube channel <a href="https://www.youtube.com/@GTAdrivespace">Drivespace_GTA</a>. It runs only on the owner's own PC, and the owner is its only user. This policy explains what the tool accesses and keeps, and how to remove its access.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>The tool uses YouTube API Services to upload videos to YouTube. By using the tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. YouTube and Google handle your data as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> (<a href="http://www.google.com/policies/privacy">www.google.com/policies/privacy</a>).</p>
+
+  <h2>What the tool accesses</h2>
+  <p>When you sign in with Google, the tool asks for two permissions:</p>
+  <ul>
+    <li><strong>Manage your YouTube videos</strong> (<code>youtube.upload</code>): to upload the owner's own Shorts, with their title, description, tags and scheduled publish time.</li>
+    <li><strong>View your YouTube account</strong> (<code>youtube.readonly</code>): to read the channel's name and ID once at sign-in, so the owner can confirm the uploads will go to the right channel.</li>
+  </ul>
+  <p>The tool doesn't read comments, analytics, subscribers, other channels' data or anything else in your Google Account.</p>
+
+  <h2>What the tool stores, and where</h2>
+  <p>Everything stays in files on the owner's own PC. Nothing is stored on any server, and the tool uses no cookies, tracking or analytics.</p>
+  <ul>
+    <li><strong>Sign-in token:</strong> the OAuth token Google issues, so the tool can upload without signing in each time.</li>
+    <li><strong>Upload history:</strong> for each video the tool uploads, its YouTube video ID, title, privacy status, scheduled publish time and the name of the local file it came from. This only exists so the same video is never uploaded twice.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The tool doesn't sell, share or transfer any data obtained through YouTube API Services to anyone.</p>
+  <p>Separately, before a video is uploaded, the tool sends a still image and the spoken dialogue of the owner's own clip to Anthropic's Claude API to draft a title, description and tags. That's the owner's own content from their PC, not data obtained from YouTube. Anthropic's handling of it is covered by the <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a>.</p>
+
+  <h2>Keeping and refreshing data</h2>
+  <ul>
+    <li>The sign-in token is kept until you sign out, revoke access, or delete the token file.</li>
+    <li>Each time the tool runs, it checks again with YouTube any details in the upload history (video ID, title, privacy status and scheduled time) that are more than 25 days old. They're updated, or deleted if the video no longer exists or the tool's access has ended. So while the tool is in use, nothing it keeps from YouTube is more than 30 days old.</li>
+    <li>The tool doesn't keep any other data from YouTube.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <p>You can delete everything the tool stored at any time, and it happens right away (always within 7 days of a request). On the owner's PC, the command <code>gta-clips youtube-forget</code> revokes the sign-in with Google, deletes the token, and deletes the YouTube details from the upload history. It keeps only the names of the local files that were already posted, so nothing is uploaded twice. You can also ask by email at the address below.</p>
+  <p>Deleting the tool's data doesn't change anything on YouTube: your videos stay on your channel. To delete a video from YouTube, use YouTube Studio or another YouTube app that can delete videos.</p>
+
+  <h2>Revoking access</h2>
+  <p>You can remove the tool's access to your Google Account at any time on the Google security settings page: <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>. Select <strong>GTA Clips Uploader</strong>, then remove its access. After that the tool can no longer reach your account. <code>gta-clips youtube-forget</code> deletes what it kept right away; otherwise it deletes YouTube details more than 30 days old the next time it runs.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, this page will show the new version and its effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:brandontmechanics@gmail.com">brandontmechanics@gmail.com</a></p>
+</main>
+<footer>
+  <div class="wrap">
+    <p><a href="./">Home</a> · <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+</body>
+</html>
